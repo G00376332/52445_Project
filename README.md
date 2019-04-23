@@ -1,4 +1,4 @@
-# Programming and Scripting Project 2019 - Fisher’s Iris data set
+# Programming and Scripting Project - Fisher’s Iris data set
 
 This repository contains the project about Fisher's Iris data set. It includes documentation and code in Python based on researches. 
 
