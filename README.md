@@ -1,4 +1,4 @@
- Programming and Scripting Project - Fisher’s Iris data set
+# Programming and Scripting Project - Fisher’s Iris data set
 
 This repository contains the project about Fisher's Iris data set. It includes documentation and code in Python based on researches. 
 
@@ -15,7 +15,12 @@ This repository contains the project about Fisher's Iris data set. It includes d
 
 ## Background information and summary about the data set
 
-![Iris Versicolor](Photos/Iris_Vesicolor.JPG)
+|![Iris Versicolor](Photos/Iris_Vesicolor.JPG)|![Iris Setosa](Photos/Iris_Setosa.JPG)|![Iris Virginica](Photos/Iris_Virginica.JPG)|
+|-----------|-----------|-----------|
+| Iris Versicolor | Iris Setosa | Iris Virginica |
+
+
+
 
 ## References
 
