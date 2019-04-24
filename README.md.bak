@@ -15,7 +15,15 @@ This repository contains the project about Fisher's Iris data set. It includes d
 
 ## Background information and summary about the data set
 
-![Iris Versicolour]
+|![Iris Versicolor](Photos/Iris_Vesicolor.JPG)|![Iris Setosa](Photos/Iris_Setosa.JPG)|![Iris Virginica](Photos/Iris_Virginica.JPG)|
+|-----------|-----------|-----------|
+| Iris Versicolor | Iris Setosa | Iris Virginica |
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> be442c0d34797d5d17f29e1fc3a188bbe73c3605
 
 ## References
 
