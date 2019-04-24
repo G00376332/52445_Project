@@ -30,6 +30,7 @@ Four features were measured from each sample:
 ![Iris Description](Photos/Iris_description1.JPG)
 
 Based on the combination of the above four features, Fisher developed a linear discriminant model to distinguish the species from each other. 
+Interesting and challenging in the relation of Iris flowers is the fact that sepal and petal look quite similar contrary to other flowers where sepal is usually green and easy to distinguish from the petal.
 
 ## References
 
