@@ -20,7 +20,7 @@ This repository contains the project about Fisher's Iris data set. It includes d
 | Iris Versicolor | Iris Setosa | Iris Virginica |
 
 
-![Iris Description](Photos/Iris_description.JPG)
+![Iris Description](Photos/Iris_description1.JPG)
 
 
 
