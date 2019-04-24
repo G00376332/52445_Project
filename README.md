@@ -15,14 +15,21 @@ This repository contains the project about Fisher's Iris data set. It includes d
 
 ## Background information and summary about the data set
 
+Iris data set is a multivariate data set introduced by the British statistician and biologist Ronald Fisher in his 1936 paper.The use of multiple measurements in taxonomic problems as an example of linear discriminant analysis. It is sometimes called Anderson's Iris data set because Edgar Anderson collected the data to quantify the morphologic variation of Iris flowers of three related species. The data set consists of 50 samples from each of three species of Iris:
+
 |![Iris Versicolor](Photos/Iris_Vesicolor.JPG)|![Iris Setosa](Photos/Iris_Setosa.JPG)|![Iris Virginica](Photos/Iris_Virginica.JPG)|
 |-----------|-----------|-----------|
 | Iris Versicolor | Iris Setosa | Iris Virginica |
 
+Four features were measured from each sample:
+* Sepal length(cm)
+* Sepal Width(cm)
+* Petal Length(cm)
+* Petal Width(cm)
 
 ![Iris Description](Photos/Iris_description1.JPG)
 
-
+Based on the combination of the above four features, Fisher developed a linear discriminant model to distinguish the species from each other. 
 
 ## References
 
