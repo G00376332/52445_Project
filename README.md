@@ -32,7 +32,28 @@ Four features were measured from each sample:
 Based on the combination of the above four features, Fisher developed a linear discriminant model to distinguish the species from each other. 
 Interesting and challenging in the relation of Iris flowers is the fact that sepal and petal look quite similar contrary to other flowers where sepal is usually green and easy to distinguish from the petal.
 
-![Sepal Petal](Photos/sepal_petal.jpg)
+![Sepal Petal](Photos/sepal_petal.JPG)
+
+## Data set review
+
+The data set used for this project was downloaded from the UCI Machine Learning Repository. This repository contains iris dataset widely used in many publications and research projects across the world.
+
+* Number of Instances: 150 (50 in each of three classes)
+
+* Number of Attributes: 4 numeric, predictive attributes and the class
+
+Attribute Information:
+1. sepal length in cm
+1. sepal width in cm
+1. petal length in cm
+1. petal width in cm
+1. class:
+    
+    * Iris Setosa
+    * Iris Versicolour
+    * Iris Virginica
+
+
 
 ## References
 
@@ -41,3 +62,4 @@ Interesting and challenging in the relation of Iris flowers is the fact that sep
 1. [Iris Setosa](https://calphotos.berkeley.edu/cgi/img_query?enlarge=0000+0000+1202+1326)
 1. [Iris Virginica](https://www.fs.fed.us/wildflowers/beauty/iris/Blue_Flag/images/iris_virginica_virginica_lg.jpg)
 1. [Iris Dataset](http://mirlab.org/jang/books/dcpr/dataSetIris.asp?title=2-2%20Iris%20Dataset)
+1. [UCI Machine Learning Repository - dataset for this project](https://archive.ics.uci.edu/ml/datasets/iris)
