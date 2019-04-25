@@ -12,7 +12,7 @@ names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
 dataset = pandas.read_csv(data, names=names)
 # Segregate data and display basic information about row and columns 
 print(dataset.shape)
-# Dsiplay first 20 rows of data
-print(dataset.head(20))
+# Dsiplay first 10 rows of data
+print(dataset.head(10))
 # Display the statistical summary of each attribute: count, mean, min and max values and percentiles. 
 print(dataset.describe())
