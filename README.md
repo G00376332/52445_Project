@@ -19,7 +19,7 @@ Iris data set is a multivariate data set introduced by the British statistician 
 
 |![Iris Versicolor](Photos/Iris_Vesicolor.JPG)|![Iris Setosa](Photos/Iris_Setosa.JPG)|![Iris Virginica](Photos/Iris_Virginica.JPG)|
 |-----------|-----------|-----------|
-| Iris Versicolor | Iris Setosa | Iris Virginica |
+| <p align="center"> **Iris Versicolor** </p> | <p align="center"> **Iris Setosa** </p> | <p align="center"> **Iris Virginica** </p> |
 
 Four features were measured from each sample:
 * Sepal length(cm)
