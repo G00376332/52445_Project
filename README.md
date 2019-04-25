@@ -58,12 +58,13 @@ Based on the combination of these four features, Fisher developed a linear discr
 ## Investigating dataset using Python script
 
 The dataset contains raw data with comma-separated values. To make those data more meaningful and readable for a regular user the Python script has been involved. The pandas was used to load and read file "iris.data" from local folder "Dataset". The names of each column were specified when loading the data. Having data loaded in to pandas it was easy to obtain the required information.
-Using ***print(dataset.shape)*** displays number of instances and attributes: (150, 5).
 
-To visualize first 10 raws data with appropriete column names ***print(dataset.head(10))*** was used. 
+Using ***print(dataset.shape)*** it displays the number of instances and attributes: **(150, 5)**.
+
+To visualize first ten rows data with appropriate column names ***print(dataset.head(10))*** was used. 
 
 | No.| sepal-length | sepal-width | petal-length | petal-width | class |
-|---|-----------|----------------|
+|---|-----|-----|-----|-----|-------------|
 | 0 | 5.1 | 3.5 | 1.4 | 0.2 | Iris-setosa |
 | 1 | 4.9 | 3.0 | 1.4 | 0.2 | Iris-setosa |
 | 2 | 4.7 | 3.2 | 1.3 | 0.2 | Iris-setosa |
@@ -74,6 +75,22 @@ To visualize first 10 raws data with appropriete column names ***print(dataset.h
 | 7 | 5.0 | 3.4 | 1.5 | 0.2 | Iris-setosa |
 | 8 | 4.4 | 2.9 | 1.4 | 0.2 | Iris-setosa |
 | 9 | 4.9 | 3.1 | 1.5 | 0.1 | Iris-setosa |
+
+Finally using ***print(dataset.describe())***, it was possible to do some statistical summary on dataset.
+
+| | sepal-length | sepal-width | petal-length | petal-width |
+|---|-----|-----|-----|-----|
+| **count** | 150.000000 | 150.000000 | 150.000000 | 150.000000 |
+| **mean** | 5.843333 | 3.054000 | 3.758667 | 1.198667 |
+| **std** | 0.828066 | 0.433594 | 1.764420 | 0.763161 |
+| **min** | 4.300000 | 2.000000 | 1.000000 | 0.100000 |
+| **25%** | 5.100000 | 2.800000 | 1.600000 | 0.300000 |
+| **50%** | 5.800000 | 3.000000 | 4.350000 | 1.300000 |
+| **75%** | 6.400000 | 3.300000 | 5.100000 | 1.800000 |
+| **max** | 7.900000 | 4.400000 | 6.900000 | 2.500000 |
+
+Looking at the above table, it is clear that all values have the same scale and ranges between 0 and 8 centimetres.
+
 
 
 
