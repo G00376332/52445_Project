@@ -116,6 +116,20 @@ It is also extremely easy in Python (**scatter_matrix(dataset)**) to generate sc
 
 Using Wikipedia [scatter][3] examples as references look like most of the scatter plots produced acceptable separations on the plots. The best separation of data that allows determining species is based on petal-width and petal-length and the worst is represented by sepal-length and sepal-width.
 
+## Different analysis and approaches to the data set
+
+
+
+## Going beyond the project and using more advanced Python tools
+
+
+## Brief Python project program description
+
+
+## Conclution and summary
+
+
+
 ## References
 
 1. [Wikipedia - Iris flower data set](https://en.wikipedia.org/wiki/Iris_flower_data_set)
@@ -127,6 +141,7 @@ Using Wikipedia [scatter][3] examples as references look like most of the scatte
 1. [Wikipedia - Normal distribution](https://en.wikipedia.org/wiki/Normal_distribution)
 1. [Watson Analytics Use Case: The Iris Data Set](https://www.ibm.com/communities/analytics/watson-analytics-blog/watson-analytics-use-case-the-iris-data-set/)
 1. [Wikipedia - Scatter plot of Iris Data Set](https://en.wikipedia.org/wiki/Iris_flower_data_set#/media/File:Iris_dataset_scatterplot.svg)
+1. [Pynative - Python function](https://pynative.com/python-check-user-input-is-number-or-string/)
 
 [1]: segregation.py 
 [2]: https://en.wikipedia.org/wiki/Normal_distribution
