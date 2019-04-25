@@ -42,6 +42,7 @@ The data set used for this project was downloaded from the UCI Machine Learning 
 
 * Number of Attributes: 4 numeric, predictive attributes and the class
 
+
 Attribute Information:
 1. sepal length in cm
 1. sepal width in cm
@@ -57,7 +58,9 @@ Based on the combination of these four features, Fisher developed a linear discr
 
 ## Investigating dataset using Python script
 
-The dataset contains raw data with comma-separated values. To make those data more meaningful and readable for a regular user the Python script has been involved. The pandas was used to load and read file "iris.data" from local folder "Dataset". The names of each column were specified when loading the data. Having data loaded in to pandas it was easy to obtain the required information.
+### Evaluating datasets
+
+The dataset contains raw data with comma-separated values. To make those data more meaningful and readable for a regular user the Python script [segregation.py][1] has been created. The pandas was used to load and read file "iris.data" from local folder "Dataset". The names of each column were specified when loading the data. Having data loaded in to pandas it was easy to obtain the required information.
 
 Using ***print(dataset.shape)*** it displays the number of instances and attributes: **(150, 5)**.
 
@@ -90,6 +93,9 @@ Finally using ***print(dataset.describe())***, it was possible to do some statis
 | **max** | 7.900000 | 4.400000 | 6.900000 | 2.500000 |
 
 Looking at the above table, it is clear that all values have the same scale and ranges between 0 and 8 centimetres.
+It means all data in dataset do not require normalization to produce valuable results.
+
+### Visualization of results
 
 
 
@@ -102,3 +108,5 @@ Looking at the above table, it is clear that all values have the same scale and 
 1. [Iris Virginica](https://www.fs.fed.us/wildflowers/beauty/iris/Blue_Flag/images/iris_virginica_virginica_lg.jpg)
 1. [Iris Dataset](http://mirlab.org/jang/books/dcpr/dataSetIris.asp?title=2-2%20Iris%20Dataset)
 1. [UCI Machine Learning Repository - dataset for this project](https://archive.ics.uci.edu/ml/datasets/iris)
+
+[1]: segregation.py 
