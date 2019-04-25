@@ -97,8 +97,21 @@ It means all data in dataset do not require normalization to produce valuable re
 
 ### Visualization of results
 
+Having numeric variables in the dataset allows creating easily multiple visual presentations of data.
 
+The simple box and whisker plots of each variable present a clear idea of the distribution of the input attributes.
 
+![Plot 1](Outputs/box_and_whisker_plot.png)
+
+Using just one line of code **dataset.hist()** histogram of each input can be created.
+
+![Histograms](Outputs/histogram.png)
+
+The histogram demonstrates that two of the input variables have a [Gaussian distribution][2]. 
+
+It is also extremely easy in Python (**scatter_matrix(dataset)**) to generate scatter matrix plot for each variable of iris dataset.
+
+![Scatter](Outputs/scatter.png)
 
 ## References
 
@@ -108,5 +121,7 @@ It means all data in dataset do not require normalization to produce valuable re
 1. [Iris Virginica](https://www.fs.fed.us/wildflowers/beauty/iris/Blue_Flag/images/iris_virginica_virginica_lg.jpg)
 1. [Iris Dataset](http://mirlab.org/jang/books/dcpr/dataSetIris.asp?title=2-2%20Iris%20Dataset)
 1. [UCI Machine Learning Repository - dataset for this project](https://archive.ics.uci.edu/ml/datasets/iris)
+1. [Wikipedia - Normal distribution](https://en.wikipedia.org/wiki/Normal_distribution)
 
 [1]: segregation.py 
+[2]: https://en.wikipedia.org/wiki/Normal_distribution
