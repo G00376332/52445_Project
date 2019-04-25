@@ -9,7 +9,7 @@ This repository contains the project about Fisher's Iris data set. It includes d
 * Research background information about the data set and write a summary about it.
 * Keep a list of references you used in completing the project.
 * Download the data set and write some Python code to investigate it.
-* Summarise the data set by, for example, calculating the maximum, minimum and mean of each column of the data set. A Python script will quickly do this for you.
+* Summarise the data set by, for example, calculating the maximum, minimum and mean of each column of the data set. Create Python script
 * Write a summary of your investigations.
 * Include supporting tables and graphics as you deem necessary.
 
@@ -52,6 +52,28 @@ Attribute Information:
     * Iris Setosa
     * Iris Versicolour
     * Iris Virginica
+    
+Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other. This data set became a typical test case for many statistical classification techniques in machine learning.
+
+## Investigating dataset using Python script
+
+The dataset contains raw data with comma-separated values. To make those data more meaningful and readable for a regular user the Python script has been involved. The pandas was used to load and read file "iris.data" from local folder "Dataset". The names of each column were specified when loading the data. Having data loaded in to pandas it was easy to obtain the required information.
+Using ***print(dataset.shape)*** displays number of instances and attributes: (150, 5).
+
+To visualize first 10 raws data with appropriete column names ***print(dataset.head(10))*** was used. 
+
+| No.| sepal-length | sepal-width | petal-length | petal-width | class |
+|---|-----------|----------------|
+| 0 | 5.1 | 3.5 | 1.4 | 0.2 | Iris-setosa |
+| 1 | 4.9 | 3.0 | 1.4 | 0.2 | Iris-setosa |
+| 2 | 4.7 | 3.2 | 1.3 | 0.2 | Iris-setosa |
+| 3 | 4.6 | 3.1 | 1.5 | 0.2 | Iris-setosa |
+| 4 | 5.0 | 3.6 | 1.4 | 0.2 | Iris-setosa |
+| 5 | 5.4 | 3.9 | 1.7 | 0.4 | Iris-setosa |
+| 6 | 4.6 | 3.4 | 1.4 | 0.3 | Iris-setosa |
+| 7 | 5.0 | 3.4 | 1.5 | 0.2 | Iris-setosa |
+| 8 | 4.4 | 2.9 | 1.4 | 0.2 | Iris-setosa |
+| 9 | 4.9 | 3.1 | 1.5 | 0.1 | Iris-setosa |
 
 
 
