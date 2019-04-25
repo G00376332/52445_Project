@@ -36,7 +36,7 @@ Interesting and challenging in the relation of Iris flowers is the fact that sep
 
 ## Data set review
 
-The data set used for this project was downloaded from the UCI Machine Learning Repository. This repository contains iris dataset widely used in many publications and research projects across the world.
+The data set used for this project was downloaded from the UCI Machine Learning Repository. This repository contains iris dataset widely used in many publications and research projects across the world. The Iris flower data set is a classic, well-known data set example for data mining and data exploration and is traditionally used for classification and prediction
 
 * Number of Instances: 150 (50 in each of three classes)
 
@@ -56,15 +56,16 @@ Attribute Information:
     
 Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other. This data set became a typical test case for many statistical classification techniques in machine learning.
 
-## Investigating dataset using Python script
+## Investigating data set using Python script
 
-### Evaluating datasets
+### Evaluating data sets
 
-The dataset contains raw data with comma-separated values. To make those data more meaningful and readable for a regular user the Python script [segregation.py][1] has been created. The pandas was used to load and read file "iris.data" from local folder "Dataset". The names of each column were specified when loading the data. Having data loaded in to pandas it was easy to obtain the required information.
+The data set contains raw data with comma-separated values. To make those data more meaningful and readable for a regular user the Python script [segregation.py][1] has been created. The pandas was used to load and read file "iris.data" from local folder "Dataset". The names of each column were specified when loading the data. Having data loaded in to pandas it was easy to obtain the required information.
 
 Using ***print(dataset.shape)*** it displays the number of instances and attributes: **(150, 5)**.
 
-To visualize first ten rows data with appropriate column names ***print(dataset.head(10))*** was used. 
+To visualize first ten rows data with appropriate column names ***print(dataset.head(10))*** was used.<br />
+This displayed segregated data in the [terminal](Outputs/dataoutputs.png) as in the table below.
 
 | No.| sepal-length | sepal-width | petal-length | petal-width | class |
 |---|-----|-----|-----|-----|-------------|
@@ -79,7 +80,7 @@ To visualize first ten rows data with appropriate column names ***print(dataset.
 | 8 | 4.4 | 2.9 | 1.4 | 0.2 | Iris-setosa |
 | 9 | 4.9 | 3.1 | 1.5 | 0.1 | Iris-setosa |
 
-Finally using ***print(dataset.describe())***, it was possible to do some statistical summary on dataset.
+Finally using ***print(dataset.describe())***, it was possible to do some statistical summary on data set.
 
 | | sepal-length | sepal-width | petal-length | petal-width |
 |---|-----|-----|-----|-----|
@@ -93,11 +94,11 @@ Finally using ***print(dataset.describe())***, it was possible to do some statis
 | **max** | 7.900000 | 4.400000 | 6.900000 | 2.500000 |
 
 Looking at the above table, it is clear that all values have the same scale and ranges between 0 and 8 centimetres.
-It means all data in dataset do not require normalization to produce valuable results.
+It means all data in data set do not require normalization to produce valuable results.
 
 ### Visualization of results
 
-Having numeric variables in the dataset allows creating easily multiple visual presentations of data.
+Having numeric variables in the data set allows creating easily multiple visual presentations of data.
 
 The simple box and whisker plots of each variable present a clear idea of the distribution of the input attributes.
 
@@ -109,9 +110,11 @@ Using just one line of code **dataset.hist()** histogram of each input can be cr
 
 The histogram demonstrates that two of the input variables have a [Gaussian distribution][2]. 
 
-It is also extremely easy in Python (**scatter_matrix(dataset)**) to generate scatter matrix plot for each variable of iris dataset.
+It is also extremely easy in Python (**scatter_matrix(dataset)**) to generate scatter matrix plot for each variable of iris data set.
 
 ![Scatter](Outputs/scatter.png)
+
+Using Wikipedia [scatter][3] examples as references look like most of the scatter plots produced acceptable separations on the plots. The best separation of data that allows determining species is based on petal-width and petal-length and the worst is represented by sepal-length and sepal-width.
 
 ## References
 
@@ -119,9 +122,12 @@ It is also extremely easy in Python (**scatter_matrix(dataset)**) to generate sc
 1. [Iris Versicolor](https://www.lakeforest.edu/academics/programs/environmental/courses/es204/iris_versicolor.php)
 1. [Iris Setosa](https://calphotos.berkeley.edu/cgi/img_query?enlarge=0000+0000+1202+1326)
 1. [Iris Virginica](https://www.fs.fed.us/wildflowers/beauty/iris/Blue_Flag/images/iris_virginica_virginica_lg.jpg)
-1. [Iris Dataset](http://mirlab.org/jang/books/dcpr/dataSetIris.asp?title=2-2%20Iris%20Dataset)
-1. [UCI Machine Learning Repository - dataset for this project](https://archive.ics.uci.edu/ml/datasets/iris)
+1. [Iris Data Set](http://mirlab.org/jang/books/dcpr/dataSetIris.asp?title=2-2%20Iris%20Dataset)
+1. [UCI Machine Learning Repository - data set for this project](https://archive.ics.uci.edu/ml/datasets/iris)
 1. [Wikipedia - Normal distribution](https://en.wikipedia.org/wiki/Normal_distribution)
+1. [Watson Analytics Use Case: The Iris Data Set](https://www.ibm.com/communities/analytics/watson-analytics-blog/watson-analytics-use-case-the-iris-data-set/)
+1. [Wikipedia - Scatter plot of Iris Data Set](https://en.wikipedia.org/wiki/Iris_flower_data_set#/media/File:Iris_dataset_scatterplot.svg)
 
 [1]: segregation.py 
 [2]: https://en.wikipedia.org/wiki/Normal_distribution
+[3]: https://en.wikipedia.org/wiki/Iris_flower_data_set#/media/File:Iris_dataset_scatterplot.svg
