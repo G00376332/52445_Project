@@ -5,8 +5,6 @@
 import os
 # Import timer to use in time sleep
 import time
-# Import numpy 
-import numpy as np
 # Use pandas to work on data analysis and create useful outputs.
 import pandas
 # Import colour map
@@ -28,9 +26,9 @@ else:
     cl = "clear"
 
 os.system(cl)
-print("Welcome to Programing and Scripting Project Program about the Iris Data Set")
-print("This program contains the Iris data set which was automaticaly loaded in to the program.")
-print("You can choose from the following menu option to display basic information and plot different graphs\n")
+print("Welcome to Programing and Scripting Project Program about the Iris Data Set.")
+print("This program contains the Iris data set which was automatically loaded into the program.")
+print("You can choose from the following menu option to display basic information and plot different graphs.\n")
 
 # Creating simple menu for user choice
 def menu():       
@@ -96,7 +94,7 @@ while cond:
         elif n==7:
             # This will make the while loop to end 
             os.system(cl)
-            print("Thank you for using this program :)\nGood Bye!")
+            print("Thank you for using this program :)\nGoodbye!")
             # Wait for displaying a message for 2s
             time.sleep(2)
             cond=False     

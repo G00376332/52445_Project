@@ -104,13 +104,13 @@ The simple box and whisker plots of each variable present a clear idea of the di
 
 ![Plot 1](Outputs/box_and_whisker_plot.png)
 
-Using just one line of code **dataset.hist()** histogram of each input can be created.
+Using just one line of code ***dataset.hist()*** histogram of each input can be created.
 
 ![Histograms](Outputs/histogram.png)
 
 The histogram demonstrates that two of the input variables have a [Gaussian distribution][2]. 
 
-It is also extremely easy in Python (**scatter_matrix(dataset)**) to generate scatter matrix plot for each variable of iris data set.
+It is also extremely easy in Python (***scatter_matrix(dataset)***) to generate scatter matrix plot for each variable of iris data set.
 
 ![Scatter](Outputs/scatter.png)
 
@@ -125,7 +125,60 @@ Using Wikipedia [scatter][3] examples as references look like most of the scatte
 
 ## Brief Python project program description
 
+The Phyton program **segregation.py** was created to allow user basic interaction with the Iris data set. The program was updated a few times and evolved during this project creation. There are many approaches to load and read Iris data set in Python however in this basic program the solution that reflect final Project requirement was used. The Iris data set **iris.data** was downloaded from the UCI repository and it was not modified to a different format (csv and columns name) to show that Python can handle that kind of raw file. Mainly libraries like pandas and matplotlib were used to work on the data set.
 
+To run this program the Python enviroment is required on the PC. Following steps help to setup software for the first run.
+
+* Install Python on your PC. You can use [Anaconda Distribution](https://www.anaconda.com/distribution/).  
+* Use Command Prompt (you can use any console i.e. [Cmder](https://cmder.net/)) and navigate to the folder where you downloaded this repository programs.
+* Type python "program name that you want to run" i.e. python segregation.py.
+
+The program is loading data set in the background at the start from the folder Dataset and then welcome screen with "Menu" is displayed.
+
+```python
+Welcome to Programing and Scripting Project Program about the Iris Data Set.
+This program contains the Iris data set which was automatically loaded into the program.
+You can choose from the following menu option to display basic information and plot different graphs.
+
+------------------------------ MENU ------------------------------
+1. Display information about row and columns in data set
+2. Display first 10 rows of segregated data
+3. Display the statistical summary
+4. Display box and whiskers plots
+5. Display histogram of each input variable
+6. Display scatter matrix plot
+7. Exit
+------------------------------------------------------------------
+Enter your selection [1-7]:
+```
+In this section of code the ***def*** statement together with ***while*** loop and ***if*** condition was used to create **menu()** function. 
+
+The first three menu options provide basic and statistical information about the data set and involve pandas libraries to carried out this task.
+
+* ***print(dataset.shape)*** return dimensions and size of data frame. In this case number of rows and columns.
+* ***print(dataset.head(10))*** display first ten rows of data set.
+* ***print(dataset.describe())*** shows basic statistical details of data frame.
+
+Next three positions of the menu (4-6) were clearly described in the [Visualization of results](#Visualization of results) paragraph. 
+
+The terminal window is going to be cleared after any selection from the menu regardless of the operating system. This involve **os** library.
+
+```python
+if os.name =="nt":
+    cl = "cls"
+else:
+    cl = "clear"
+
+os.system(cl)
+```
+
+Program is running continuously allows the user to make more choices from the menu until option seven is selected. This will terminate the program and display a goodbye message.
+
+```python
+Thank you for using this program :)
+Goodbye!
+```
+ 
 ## Conclution and summary
 
 
