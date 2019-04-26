@@ -125,7 +125,7 @@ Using Wikipedia [scatter][3] examples as references look like most of the scatte
 
 ## Brief Python project program description
 
-The Phyton program **segregation.py** was created to allow user basic interaction with the Iris data set. The program was updated a few times and evolved during this project creation. There are many approaches to load and read Iris data set in Python however in this basic program the solution that reflect final Project requirement was used. The Iris data set **iris.data** was downloaded from the UCI repository and it was not modified to a different format (csv and columns name) to show that Python can handle that kind of raw file. Mainly libraries like pandas and matplotlib were used to work on the data set.
+The Phyton program [segregation.py][1] was created to allow user basic interaction with the Iris data set. The program was updated a few times and evolved during this project creation. There are many approaches to load and read Iris data set in Python however in this basic program the solution that reflect final Project requirement was used. The Iris data set **iris.data** was downloaded from the UCI repository and it was not modified to a different format (csv and columns name) to show that Python can handle that kind of raw file. Mainly libraries like pandas and matplotlib were used to work on the data set.
 
 To run this program the Python enviroment is required on the PC. Following steps help to setup software for the first run.
 
@@ -159,7 +159,7 @@ The first three menu options provide basic and statistical information about the
 * ***print(dataset.head(10))*** display first ten rows of data set.
 * ***print(dataset.describe())*** shows basic statistical details of data frame.
 
-Next three positions of the menu (4-6) were clearly described in the [Visualization of results](#Visualization of results) paragraph. 
+Next three positions of the menu (4-6) were clearly described in the [Visualization of results](#visualization-of-results) paragraph. 
 
 The terminal window is going to be cleared after any selection from the menu regardless of the operating system. This involve **os** library.
 
