@@ -125,9 +125,9 @@ Using Wikipedia [scatter][3] examples as references look like most of the scatte
 
 ## Brief Python project program description
 
-The Phyton program **segregation.py** was created to allow user basic interaction with the Iris data set. The program was updated a few times and evolved during this project creation. There are many approaches to load and read Iris data set in Python however in this basic program the solution that reflect final Project requirement was used. The Iris data set **iris.data** was downloaded from the UCI repository and it was not modified to a different format (csv and columns name) to show that Python can handle that kind of raw file. Mainly libraries like pandas and matplotlib were used to work on the data set.
+The Phyton program **segregation.py** was created to allow user basic interaction with the Iris data set. The program was updated a few times and evolved during this project creation. There are many approaches to load and read Iris data set in Python however in this basic program the solution that reflect final Project requirement was used. The Iris data set **iris.data** was downloaded from the UCI repository and it was not modified to a different format (csv and columns name) to show that Python can handle that kind of raw file. Mainly libraries like **pandas** and **matplotlib** were used to work on the data set.
 
-To run this program the Python enviroment is required on the PC. Following steps help to setup software for the first run.
+To run this program the Python environment is required on the PC. Following steps help to setup software for the first run
 
 * Install Python on your PC. You can use [Anaconda Distribution](https://www.anaconda.com/distribution/).  
 * Use Command Prompt (you can use any console i.e. [Cmder](https://cmder.net/)) and navigate to the folder where you downloaded this repository programs.
