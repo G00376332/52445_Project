@@ -3,8 +3,14 @@
 
 # Import os to issue operating system terminal commnads
 import os
+# Import timer to use in time sleep
+import time
+# Import numpy 
+import numpy as np
 # Use pandas to work on data analysis and create useful outputs.
 import pandas
+# Import colour map
+import matplotlib.cm as cm
 # Use matplotlib to plot and visualize data.
 import matplotlib.pyplot as plt
 # Import scatter matrix plot from pandas
@@ -24,7 +30,7 @@ else:
 os.system(cl)
 print("Welcome to Programing and Scripting Project Program about the Iris Data Set")
 print("This program contains the Iris data set which was automaticaly loaded in to the program.")
-print("You can choose from the following menu option to display basic information and plot differnt graphs\n")
+print("You can choose from the following menu option to display basic information and plot different graphs\n")
 
 # Creating simple menu for user choice
 def menu():       
@@ -82,12 +88,19 @@ while cond:
             os.system(cl)
         elif n==6:
             # Display scatter matrix plot
-            scatter_matrix(dataset)
+            # Assign different colours for different class            
+            cmap = {"Iris-setosa": "red", "Iris-versicolor": "green", "Iris-virginica": "blue"} 
+            scatter_matrix(dataset, c=[cmap[col] for col in dataset["class"]])
             plt.show()
             os.system(cl)
         elif n==7:
             # This will make the while loop to end 
-            cond=False 
+            os.system(cl)
+            print("Thank you for using this program :)\nGood Bye!")
+            # Wait for displaying a message for 2s
+            time.sleep(2)
+            cond=False     
+            os.system(cl)          
         else:
             print("Wrong selection. Enter any key to continue..")
             input()
