@@ -181,7 +181,9 @@ Goodbye!
  
 ## Conclution and summary
 
+Working on this project became clear that Python together with other libraries in Anaconda environment is a very powerful tool for any data manipulation. This very high-level of programing language is now the foundation for scientists who work with a large number of data sets. This project confirmed how easy and efficient is Python. Even for the user without any programming skills getting into the simple data presentation and produce meaningful results can be achieved in short timeframe. Looking at other languages like i.e. ".Net C#" creating the same graphs and calculation would take much more time and skills than Python.
 
+Going forward to use Python for Machine Learning process is absolutely phenomenal tools like [scikit-learn][4] and [seaborn][5] available that in an easy way provide access to many predictive algorithms and a high-level interface for drawing statistical graphics. 
 
 ## References
 
@@ -195,7 +197,11 @@ Goodbye!
 1. [Watson Analytics Use Case: The Iris Data Set](https://www.ibm.com/communities/analytics/watson-analytics-blog/watson-analytics-use-case-the-iris-data-set/)
 1. [Wikipedia - Scatter plot of Iris Data Set](https://en.wikipedia.org/wiki/Iris_flower_data_set#/media/File:Iris_dataset_scatterplot.svg)
 1. [Pynative - Python function](https://pynative.com/python-check-user-input-is-number-or-string/)
+1. [Seaborn](https://seaborn.pydata.org/)
+1. [Scikit-Learn](https://scikit-learn.org/stable/supervised_learning.html#supervised-learning)
 
 [1]: segregation.py 
 [2]: https://en.wikipedia.org/wiki/Normal_distribution
 [3]: https://en.wikipedia.org/wiki/Iris_flower_data_set#/media/File:Iris_dataset_scatterplot.svg
+[4]: https://scikit-learn.org/stable/supervised_learning.html#supervised-learning
+[5]: https://seaborn.pydata.org/
