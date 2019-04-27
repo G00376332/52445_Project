@@ -102,7 +102,7 @@ Having numeric variables in the data set allows creating easily multiple visual 
 
 The simple box and whisker plots of each variable present a clear idea of the distribution of the input attributes.
 
-![Plot 1](Outputs/box_and_whisker_plot.png)
+![Plot_1](Outputs/box_and_whisker_plot.png)
 
 Using just one line of code ***dataset.hist()*** histogram of each input can be created.
 
@@ -118,7 +118,54 @@ Using Wikipedia [scatter][3] examples as references look like most of the scatte
 
 ## Different analysis and approaches to the data set
 
+In this paragraph, other ways and methods will be presented to analyse data.  One of the very useful library for Python is the **Seaborn**. Seaborn is a Python data visualization library based on **matplotlib**. It gives the user access to drawing sophisticated statistical plots.The [adv-segregation.py][6] was created to demonstrate the advantage of use of seaborn vs. regular grapic functions.
+The first advantage of using seaborn is that comes with a [built-in datasets][7] which already include Iris data.
+The Iris dataset can be simply loaded using seaborn.
 
+```python
+dataset = sns.load_dataset("iris")
+```
+Now is possible to do the same work as before but using more advanced tools.
+
+### Pairplot
+
+This graph is a better version of the scatter matrix and allows the user with easier data presentation. It shows a relationship between different data across multiple dimensions. To generate this graph, below function**sns.pairplot()** was used. There are multiple options to manipulate outcome on the plot i.e. **palette** to change colours of data or **markers** to indicate different groups of data.
+
+```python
+sns.pairplot(dataset, hue="species", palette="husl", markers=["o", "s", "D"])
+```
+
+![Pairplot](Outputs/pairplot.png)
+
+### Violin Plot - Categorical Distribution Plot
+
+Violin plots allow to visualize the distribution of a numeric variable for one or several groups. It is really close from a boxplot, but allows a deeper understanding of the density. Violins are particularly adapted when the amount of data is huge and showing individual observations gets impossible. This graph is one of the best and convenient way of data presentation. It shows the distribution of quantitative data across several levels of one (or more) categorical variables such that those distributions can be compared. The black bar in the centre of each figure is related to the interquartile range.
+
+![Violin_bar](Photos/violin_bar.png)
+
+```python
+sns.violinplot(x="species", y="petal_width", palette="husl", data=dataset)
+```
+![Violin_petal_w](Outputs/violin_petal_w.png)
+
+```python
+sns.violinplot(x="species", y="petal_length", palette="husl", data=dataset)
+```
+![Violin_petal_l](Outputs/violin_petal_l.png)
+
+Changing data for "y" axis shows a correlation between species for different parameters. More violin graphs can be found in [Outputs][8] folder. 
+
+### Swarmplot - Categorical Scatterplot
+
+A swarm plot is a good complement to violin plot in cases where all observations along with some representation of the underlying distribution can be shown. This graph belong to **Categorical Scatterplots** which means that one of main variables is divided into discrete groups. Dataset was transformed using **pandas.melt** function before displayed on "swarmplot".
+
+```python
+dataset_melt = pd.melt(dataset, "species", var_name="measurement")
+sns.swarmplot(x="measurement", y="value", hue="species",palette="husl", data=dataset_melt)
+plt.show()
+```
+
+![Swarmplot](Output/swarmplot.png)
 
 ## Going beyond the project and using more advanced Python tools
 
@@ -199,9 +246,13 @@ Going forward to use Python for Machine Learning process is absolutely phenomena
 1. [Pynative - Python function](https://pynative.com/python-check-user-input-is-number-or-string/)
 1. [Seaborn](https://seaborn.pydata.org/)
 1. [Scikit-Learn](https://scikit-learn.org/stable/supervised_learning.html#supervised-learning)
+1. [Seaborn datasets](https://github.com/mwaskom/seaborn-data)
 
 [1]: segregation.py 
 [2]: https://en.wikipedia.org/wiki/Normal_distribution
 [3]: https://en.wikipedia.org/wiki/Iris_flower_data_set#/media/File:Iris_dataset_scatterplot.svg
 [4]: https://scikit-learn.org/stable/supervised_learning.html#supervised-learning
 [5]: https://seaborn.pydata.org/
+[6]: adv-segregation.py
+[7]: https://github.com/mwaskom/seaborn-data
+[8]: Outputs/

@@ -1,5 +1,6 @@
 # Programming and Scripting Project - Fisher’s Iris data set
 # Maciej Burel - Final Project
+# Main Program - Basic work on dataset
 
 # Import os to issue operating system terminal commnads
 import os
