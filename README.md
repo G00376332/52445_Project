@@ -165,7 +165,7 @@ sns.swarmplot(x="measurement", y="value", hue="species",palette="husl", data=dat
 plt.show()
 ```
 
-![Swarmplot](Output/swarmplot.png)
+![Swarmplot](Outputs/swarmplot.png)
 
 ## Going beyond the project and using more advanced Python tools
 
