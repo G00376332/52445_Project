@@ -169,7 +169,7 @@ plt.show()
 
 ## Going beyond the project and using more advanced Python tools
 
-Moving to another aspect of using Iris data set is machine learning that can be performed. The **Scikit-learn** software machine learning library for the Python was incorporated for this task. This library has a number of useful features like various classification, regression and clustering algorithms including support vector machines. Scikit has also built-in Iris data set that can be loaded straight in to the python program but for this project existing data set ***dataset*** from seaborn in **adv-segregation.py** was used.<\br> 
+Moving to another aspect of using Iris data set is machine learning that can be performed. The **Scikit-learn** software machine learning library for the Python was incorporated for this task. This library has a number of useful features like various classification, regression and clustering algorithms including support vector machines. Scikit has also built-in Iris data set that can be loaded straight in to the python program but for this project existing data set ***dataset*** from seaborn in **adv-segregation.py** was used.<br />
 The following steps was carried out:
 
 * Investigation on the data set
@@ -196,7 +196,7 @@ Using KNN algorithm directly on the validation dataset, below results were produ
 weighted avg       0.90      0.90      0.90        30
 ```
 
-The results reveal that the accuracy of this prediction model is 0.9 (90%). Precision, recall, f1-score and support also showing satisfying feedback for each class.
+The results reveal that the accuracy of this prediction model is 0.9 (90%). Precision, recall, f1-score and support also showing satisfying feedback for each class.<br />
 In the end, this model was tested on the user entered data. Data for three different species were used.
 
 | sepal-length | sepal-width | petal-length | petal-width | class |
