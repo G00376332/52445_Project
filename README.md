@@ -300,7 +300,7 @@ Thank you for using this program :)
 Goodbye!
 ```
  
-## Conclution and summary
+## Conclusion and summary
 
 Working on this project became clear that Python together with other libraries in Anaconda environment is a very powerful tool for any data manipulation. This very high-level of programing language is now the foundation for scientists who work with a large number of data sets. This project confirmed how easy and efficient is Python. Even for the user without any programming skills getting into the simple data presentation and produce meaningful results can be achieved in short timeframe. Looking at other languages like i.e. ".Net C#" creating the same graphs and calculation would take much more time and skills than Python.
 
