@@ -170,6 +170,7 @@ plt.show()
 ## Going beyond the project and using more advanced Python tools
 
 Moving to another aspect of using Iris data set is machine learning that can be performed. The **Scikit-learn** software machine learning library for the Python was incorporated for this task. This library has a number of useful features like various classification, regression and clustering algorithms including support vector machines. Scikit has also built-in Iris data set that can be loaded straight in to the python program but for this project existing data set ***dataset*** from seaborn in **adv-segregation.py** was used.<br />
+
 The following steps was carried out:
 
 * Investigation on the data set
