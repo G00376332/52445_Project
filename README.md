@@ -169,6 +169,79 @@ plt.show()
 
 ## Going beyond the project and using more advanced Python tools
 
+Moving to another aspect of using Iris data set is machine learning that can be performed. The **Scikit-learn** software machine learning library for the Python was incorporated for this task. This library has a number of useful features like various classification, regression and clustering algorithms including support vector machines. Scikit has also built-in Iris data set that can be loaded straight in to the python program but for this project existing data set ***dataset*** from seaborn in **adv-segregation.py** was used.<\br> 
+The following steps was carried out:
+
+* Investigation on the data set
+* Select the best prediction model
+* Predict the answer
+
+Based on the researches on the Machine Learning content available online became clear that for first steps in this topic the best and the easiest to implement prediction model that can be used for this project is the KNN algorithm. The KNN algorithm is very simple and an accurate model with slightly worst accuracy than Support Vector Machines (SVM) but still good enough for this test.
+Dataset was split into two groups where one group was used as a validation dataset. 
+Using KNN algorithm directly on the validation dataset, below results were produced (accuracy score, confusion matrix, classification report). 
+
+```python
+0.9
+[[ 7  0  0]
+ [ 0 11  1]
+ [ 0  2  9]]
+              precision    recall  f1-score   support
+
+      setosa       1.00      1.00      1.00         7
+  versicolor       0.85      0.92      0.88        12
+   virginica       0.90      0.82      0.86        11
+
+   micro avg       0.90      0.90      0.90        30
+   macro avg       0.92      0.91      0.91        30
+weighted avg       0.90      0.90      0.90        30
+```
+
+The results reveal that the accuracy of this prediction model is 0.9 (90%). Precision, recall, f1-score and support also showing satisfying feedback for each class.
+In the end, this model was tested on the user entered data. Data for three different species were used.
+
+| sepal-length | sepal-width | petal-length | petal-width | class |
+|-----|-----|-----|-----|-------------|
+| 5.1 | 3.5 | 1.4 | 0.2 | Iris-setosa |
+| **4.9** | **3.0** | **1.4** | **0.2** | **Iris-setosa** |
+| 4.7 | 3.2 | 1.3 | 0.2 | Iris-setosa |
+| 7.0 | 3.2 | 4.7 | 1.4 | Iris-versicolor |
+| **6.4** | **3.2** | **4.5** | **1.5** | **Iris-versicolor** |
+| 6.9 | 3.1 | 4.9 | 1.5 | Iris-versicolor |
+| 6.8 | 3.0 | 5.5 | 2.1 | Iris-virginica |
+| **5.7** | **2.5** | **5.0** | **2.0** | **Iris-virginica** |
+| 5.8 | 2.8 | 5.1 | 2.4 | Iris-virginica |
+
+
+```python
+Please enter a sepal length in cm: 4.9
+Please enter a sepal width in cm: 3.0
+Please enter a petal length in cm: 1.4
+Please enter a petal width in cm: 0.2
+
+
+The tested species is:  ['setosa']
+```
+
+```python
+Please enter a sepal length in cm: 6.4
+Please enter a sepal width in cm: 3.2
+Please enter a petal length in cm: 4.5
+Please enter a petal width in cm: 1.5
+
+
+The tested species is:  ['versicolor']
+```
+
+```python
+Please enter a sepal length in cm: 5.7
+Please enter a sepal width in cm: 2.5
+Please enter a petal length in cm: 5.0
+Please enter a petal width in cm: 2.0
+
+
+The tested species is:  ['virginica']
+```
+The answers produced by the prediction model were perfectly accurate in all three tests.  
 
 ## Brief Python project program description
 
@@ -247,6 +320,8 @@ Going forward to use Python for Machine Learning process is absolutely phenomena
 1. [Seaborn](https://seaborn.pydata.org/)
 1. [Scikit-Learn](https://scikit-learn.org/stable/supervised_learning.html#supervised-learning)
 1. [Seaborn datasets](https://github.com/mwaskom/seaborn-data)
+1. [Machine Learning](https://machinelearningmastery.com/machine-learning-in-python-step-by-step/)
+1. [Machine Learning on Iris](https://diwashrestha.com/2017/09/18/machine-learning-on-iris/)
 
 [1]: segregation.py 
 [2]: https://en.wikipedia.org/wiki/Normal_distribution
